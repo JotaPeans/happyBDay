@@ -7,7 +7,10 @@ const App = () => {
             <Card>
                 <h1 className="font-bold text-2xl">Olá Julia</h1>
                 <p className=" text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <Button label="Próximo"/>
+                <div className="flex gap-10 w-full justify-center items-center">
+                    <Button color="red" label="Voltar"/>
+                    <Button color="green" label="Próximo"/>
+                </div>
             </Card>
         </main>
     );
