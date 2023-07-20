@@ -20,10 +20,12 @@ const App = () => {
                 <ParticleCanvas/>
             ) : ""}
 
-            <main className={`relative w-screen h-screen flex justify-center items-center font-medium font-cursive ${!(page === arrayMessages.messages.length) && "bg-gradient-to-tl from-[#FF8DC0]"}`}>
+            <main className={`relative w-screen h-screen flex justify-center items-center font-medium font-cursive ${!(page === arrayMessages.messages.length) && "bg-gradient-to-tl from-[#FF8DC0]"} select-none`}>
                 {page === 0 && <Card hard={page === arrayMessages.messages.length}>
                     <h1 className="font-bold text-2xl">Olá Julia</h1>
-                    <p className=" text-justify">Principal</p>
+                    <p className=" text-justify">
+                        Mooooo, feliz aniversarioooooo. Meu Deus, eu não imaginava, quando te conheci, que a gente construiria algo tão bonito. Você é uma pessoa simplesmente incrível e eu te acho perfeita em todos os sentidos.
+                    </p>
                     <div className="flex gap-10 w-full justify-center items-center">
                         <Button disabled={page === 0} setPage={() => setPage(page - 1)} color="red" label="Voltar"/>
                         <Button disabled={page === arrayMessages.messages.length} setPage={() => setPage(page + 1)} color="green" label="Próximo"/>
